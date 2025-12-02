@@ -5,6 +5,7 @@ int main()
 	const int tamanho = 8;
 	int numeros[tamanho];
 	int maior = -1000000, menor = 1000000;
+	int posicaoMaior, posicaoMenor;
 	
 	for(int i = 0; i < tamanho; i++)
 	{
@@ -17,14 +18,21 @@ int main()
 		if(numeros[i] > maior)
 		{
 			maior = numeros[i];
-		}
-		
-		if(numeros[i] < menor)
-		{
-			menor = numeros[i];
+			posicaoMaior++;
+			break;
 		}
 	}
 	
-	std::cout << "Maior número: " << maior << std::endl;
-	std::cout << "Menor número: " << menor << std::endl;
+	for(int i = 0; i < tamanho; i++
+	{
+		if(numeros[i] < menor)
+		{
+			menor = numeros[i];
+			posicaoMenor++;
+			break;
+		}
+	}
+	
+	std::cout << "Maior número: " << maior << "Posição: " << posicaoMaior << std::endl;
+	std::cout << "Menor número: " << menor << << "Posição: " << posicaoMenor << std::endl;
 }
