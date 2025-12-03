@@ -31,4 +31,6 @@ int main()
 	
 	std::cout << "Maior número: " << maior << "| Posição: " << posicaoMaior << std::endl;
 	std::cout << "Menor número: " << menor << "| Posição: " << posicaoMenor << std::endl;
+
+	return 0;
 }
